@@ -6,7 +6,7 @@
 #    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/04/21 21:13:48 by malberte         ###   ########.fr        #
+#    Updated: 2018/04/28 02:40:32 by malberte         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,7 @@ SOURCES= \
 
 OBJECTS= 	$(SOURCES:.c=.o)
 NAME= 		libft.a
-CC= 		gcc -Wall -Werror -Wextra
+CC= 		clang -Wall -Werror -Wextra
 
 all: $(NAME)
 
