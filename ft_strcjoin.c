@@ -6,7 +6,7 @@
 /*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/13 16:07:50 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/01 13:54:49 by acoulomb         ###   ########.fr       */
+/*   Updated: 2018/05/01 14:43:59 by acoulomb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char    *ft_strcjoin(char const *dst, char const *src, char c)
 	if (!dst || !dst)
 		return (NULL);
 	size_src = ft_strclen(src, c);
-	size = ft_strlen(dst);
+	size = ft_strlen(dst) + size_src;
 	if (!(s = (char*)ft_memalloc(sizeof(char) * (size + 1))))
 		return (NULL);
 	ft_strcat(s, (char*)dst);
