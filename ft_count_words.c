@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_count_words.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acoulomb <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/18 13:21:15 by acoulomb          #+#    #+#             */
-/*   Updated: 2018/04/19 18:48:02 by acoulomb         ###   ########.fr       */
+/*   Updated: 2018/05/01 14:21:40 by acoulomb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_count_words(char const *s, char c)
+size_t		ft_count_words(char const *s, char c)
 {
 	size_t words;
 	size_t i;

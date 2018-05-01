@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
+#    By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/04/28 02:40:32 by malberte         ###   ########.fr        #
+#    Updated: 2018/05/01 14:16:09 by acoulomb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,13 @@ SOURCES= \
 		ft_lstiter.c \
 		ft_lstmap.c \
 		ft_lstqueue.c \
-		ft_lstdup.c
+		ft_lstdup.c \
+		ft_strcjoin.c \
+		ft_putstr_color.c \
+		ft_strndup.c \
+		ft_intlen.c \
+		ft_count_words.c \
+		
 
 OBJECTS= 	$(SOURCES:.c=.o)
 NAME= 		libft.a

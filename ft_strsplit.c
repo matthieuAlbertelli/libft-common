@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/13 17:32:30 by malberte          #+#    #+#             */
-/*   Updated: 2018/04/15 23:20:21 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/01 14:21:31 by acoulomb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t		ft_count_words(const char *s, char c)
+size_t				ft_count_words(const char *s, char c)
 {
 	int		i;
 	size_t	count_words;

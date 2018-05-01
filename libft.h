@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
-/*   Updated: 2018/04/15 23:11:14 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/01 14:22:15 by acoulomb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,15 @@
 # define LIBFT_H
 
 # include <string.h>
+
+# define RESET  "\x1B[0m"
+# define RED  "\x1B[31m"
+# define GREEN  "\x1B[32m"
+# define YELLOW  "\x1B[33m"
+# define BLUE "\x1B[34m"
+# define MAGENTA  "\x1B[35m"
+# define CYAN  "\x1B[36m"
+# define WHITE  "\x1B[37m"
 
 typedef struct	s_list
 {
@@ -83,5 +92,10 @@ void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void			ft_lstqueue(t_list **alst, t_list *new);
 t_list			*ft_lstdup(const t_list *link);
+char			*ft_strndup(const char *s1, size_t n);
+void			ft_putstr_color(char *str, char *color);
+size_t			ft_count_words(char const *s, char c);
+int				ft_intlen(int nb);
+char			*ft_strcjoin(char const *dst, char const *src, char c);
 
 #endif

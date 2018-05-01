@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acoulomb <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/17 15:54:30 by acoulomb          #+#    #+#             */
-/*   Updated: 2018/04/17 16:19:50 by acoulomb         ###   ########.fr       */
+/*   Updated: 2018/05/01 14:22:57 by acoulomb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strndup(const char *s1, size_t n)
