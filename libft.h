@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
 /*   Updated: 2018/05/02 17:45:31 by acoulomb         ###   ########.fr       */
@@ -99,4 +99,7 @@ int				ft_intlen(int nb);
 char			*ft_strcjoin(char const *dst, char const *src, char c);
 t_list			*ft_lstfind(const t_list *lst, void *data, int (*f_cmp)(const void *d1, const void *d2));
 
+t_list	*ft_lstremove(t_list **lst, void *data,
+						int (*f_cmp)(const void *d1, const void *d2),
+						void (*del)(void *, size_t));
 #endif
