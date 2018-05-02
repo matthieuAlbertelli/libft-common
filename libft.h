@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/03 00:43:21 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/03 00:52:00 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,6 @@ t_list			*ft_lstremove(t_list **lst, void *data,
 						int (*f_cmp)(const void *d1, const void *d2),
 						void (*del)(void *, size_t));
 t_list			*ft_lstfind(const t_list *lst, void *data,
-							int (*f_cmp)(const void *d1, const void *d2))
+							int (*f_cmp)(const void *d1, const void *d2));
 
 #endif
