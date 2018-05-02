@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+         #
+#    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/05/01 14:16:09 by acoulomb         ###   ########.fr        #
+#    Updated: 2018/05/02 16:55:17 by malberte         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,6 +77,7 @@ SOURCES= \
 		ft_strndup.c \
 		ft_intlen.c \
 		ft_count_words.c \
+		ft_lstfind.c
 		
 
 OBJECTS= 	$(SOURCES:.c=.o)
