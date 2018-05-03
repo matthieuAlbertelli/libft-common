@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/02 17:45:31 by acoulomb         ###   ########.fr       */
+/*   Updated: 2018/05/02 19:15:16 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,9 +97,10 @@ void			ft_putstr_color(char *str, char *color);
 size_t			ft_count_words(char const *s, char c);
 int				ft_intlen(int nb);
 char			*ft_strcjoin(char const *dst, char const *src, char c);
-t_list			*ft_lstfind(const t_list *lst, void *data, int (*f_cmp)(const void *d1, const void *d2));
-
-t_list	*ft_lstremove(t_list **lst, void *data,
+t_list			*ft_lstremove(t_list **lst, void *data,
 						int (*f_cmp)(const void *d1, const void *d2),
 						void (*del)(void *, size_t));
+t_list			*ft_lstfind(const t_list *lst, void *data,
+							int (*f_cmp)(const void *d1, const void *d2));
+
 #endif
