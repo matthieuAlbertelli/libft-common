@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/02 19:15:16 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/03 10:35:16 by acoulomb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,5 +102,6 @@ t_list			*ft_lstremove(t_list **lst, void *data,
 						void (*del)(void *, size_t));
 t_list			*ft_lstfind(const t_list *lst, void *data,
 							int (*f_cmp)(const void *d1, const void *d2));
+size_t			ft_strclen(const char *s, const char c);
 
 #endif

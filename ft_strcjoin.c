@@ -6,21 +6,11 @@
 /*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/13 16:07:50 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/02 16:56:34 by acoulomb         ###   ########.fr       */
+/*   Updated: 2018/05/03 10:36:34 by acoulomb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static size_t	ft_strclen(const char *s, const char c)
-{
-	size_t size;
-
-	size = 0;
-	while (s[size] != c)
-		++size;
-	return (size);
-}
 
 char			*ft_strcjoin(char const *dst, char const *src, char c)
 {
