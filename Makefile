@@ -6,7 +6,7 @@
 #    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/05/04 15:24:57 by malberte         ###   ########.fr        #
+#    Updated: 2018/05/11 13:08:37 by malberte         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,7 +79,8 @@ SOURCES= \
 		ft_count_words.c \
 		ft_lstfind.c \
 		ft_lstremove.c \
-		ft_strclen.c
+		ft_strclen.c \
+		ft_get_next_line.c
 		
 
 OBJECTS= 	$(SOURCES:.c=.o)
