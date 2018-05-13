@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
+#    By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/05/11 13:08:37 by malberte         ###   ########.fr        #
+#    Updated: 2018/05/13 12:06:13 by acoulomb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,8 @@ SOURCES= \
 		ft_lstfind.c \
 		ft_lstremove.c \
 		ft_strclen.c \
-		ft_get_next_line.c
+		ft_get_next_line.c \
+		ft_atoi_base.c
 		
 
 OBJECTS= 	$(SOURCES:.c=.o)
