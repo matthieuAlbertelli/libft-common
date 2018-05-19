@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/13 12:06:38 by acoulomb         ###   ########.fr       */
+/*   Updated: 2018/05/19 22:32:14 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,6 @@ t_list			*ft_lstfind(const t_list *lst, void *data,
 size_t			ft_strclen(const char *s, const char c);
 int				get_next_line(const int fd, char **line);
 int				ft_atoi_base(const char *str, int str_base);
+char			*ft_strnchr(const char *s, int c, size_t n);
 
 #endif

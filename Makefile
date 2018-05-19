@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: acoulomb <acoulomb@student.42.fr>          +#+  +:+       +#+         #
+#    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/05/13 12:06:13 by acoulomb         ###   ########.fr        #
+#    Updated: 2018/05/19 22:30:00 by malberte         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SOURCES= \
 		ft_strncat.c \
 		ft_strncmp.c \
 		ft_strncpy.c \
+		ft_strnchr.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
 		ft_strstr.c \
