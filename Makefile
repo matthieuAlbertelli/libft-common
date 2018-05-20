@@ -6,7 +6,7 @@
 #    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/05/19 22:30:00 by malberte         ###   ########.fr        #
+#    Updated: 2018/05/20 17:12:51 by malberte         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ SOURCES= \
 		ft_strncmp.c \
 		ft_strncpy.c \
 		ft_strnchr.c \
+		ft_strnlen.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
 		ft_strstr.c \
