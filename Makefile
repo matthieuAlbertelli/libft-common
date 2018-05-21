@@ -6,7 +6,7 @@
 #    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/05/20 17:12:51 by malberte         ###   ########.fr        #
+#    Updated: 2018/05/21 09:51:01 by malberte         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,7 +83,10 @@ SOURCES= \
 		ft_lstremove.c \
 		ft_strclen.c \
 		ft_get_next_line.c \
-		ft_atoi_base.c
+		ft_atoi_base.c \
+		ft_snew.c \
+		ft_schar.c \
+		ft_sstr.c \
 		
 
 OBJECTS= 	$(SOURCES:.c=.o)

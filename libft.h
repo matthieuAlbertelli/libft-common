@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/20 17:13:20 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/21 09:50:14 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include "ft_string.h"
 
 # define RESET  "\x1B[0m"
 # define RED  "\x1B[31m"
