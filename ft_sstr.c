@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 09:46:02 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/21 09:57:40 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/21 10:45:56 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,20 @@ char			*ft_sappend(t_string *dst, const char *src)
 	}
 	ft_strcat(dst->s, src);
 	dst->len += len_src;
+	return (dst->s);
+}
+
+char			*ft_sappendn(t_string *dst, const char *src, size_t n)
+{
+	if (dst == NULL || src == NULL)
+		return (NULL);
+	if (dst->len + n >= dst->size)
+	{
+		if (ft_srealloc(dst, dst->size + n) == NULL)
+			return (NULL);
+	}
+	ft_strncat(dst->s, src, n);
+	dst->len += n;
 	return (dst->s);
 }
 
