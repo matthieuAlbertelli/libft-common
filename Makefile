@@ -6,7 +6,7 @@
 #    By: malberte <malberte@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/06 16:24:49 by malberte          #+#    #+#              #
-#    Updated: 2018/05/21 09:51:01 by malberte         ###   ########.fr        #
+#    Updated: 2018/05/21 10:16:50 by malberte         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,6 +87,7 @@ SOURCES= \
 		ft_snew.c \
 		ft_schar.c \
 		ft_sstr.c \
+		ft_sput.c
 		
 
 OBJECTS= 	$(SOURCES:.c=.o)

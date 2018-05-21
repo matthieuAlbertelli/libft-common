@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 08:11:34 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/21 09:55:00 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/21 10:17:44 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ char			*ft_serase(t_string *dst, const char *src);
 char			*ft_sinsert(t_string *dst, const char *src, size_t index);
 void			ft_sclear(t_string *dst);
 char			*ft_sset(t_string *dst, char c, size_t start, size_t len);
+int				ft_sputstr(const t_string *str);
 
 #endif
