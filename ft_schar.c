@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 09:47:11 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/22 13:07:40 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/22 14:45:56 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ char			*ft_sappendc(t_string *dst, char c, size_t len)
 	while (len > 0)
 	{
 		dst->s[dst->len] = c;
+		--len;
 		++dst->len;
 	}
-	dst->len = '\0';
-	dst->len += len;
+	dst->s[dst->len] = '\0';
 	return (dst->s);
 }
