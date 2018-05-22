@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 09:47:11 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/21 09:54:30 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/22 13:07:40 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,22 @@ char			*ft_sset(t_string *dst, char c, size_t start, size_t len)
 	if (start + len >= dst->len)
 		len = start + len - dst->len;
 	ft_memset((void*)dst->s + start, c, len);
+	return (dst->s);
+}
+
+char			*ft_sappendc(t_string *dst, char c, size_t len)
+{
+	if (dst == NULL)
+		return (NULL);
+	if (dst->len + len >= dst->size)
+		if (ft_srealloc(dst, dst->len + len + 1) == NULL)
+			return (NULL);
+	while (len > 0)
+	{
+		dst->s[dst->len] = c;
+		++dst->len;
+	}
+	dst->len = '\0';
+	dst->len += len;
 	return (dst->s);
 }
