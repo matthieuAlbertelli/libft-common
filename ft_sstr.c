@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 09:46:02 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/21 10:45:56 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/22 14:23:11 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,18 @@ char			*ft_sinsert(t_string *dst, const char *src, size_t index)
 			return (NULL);
 	}
 	ft_strcpy(dst->s + index, src);
+	return (dst->s);
+}
+
+char			*ft_insertn(t_string *dst, const char *src, size_t index, size_t n)
+{
+	if (dst == NULL || src == NULL)
+		return (NULL);
+	if (index + n >= dst->size)
+	{
+		if (ft_srealloc(dst, index + n + 1) == NULL)
+			return (NULL);
+	}
+	ft_strncpy(dst->s + index, src, n);
 	return (dst->s);
 }
