@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/07 17:08:22 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/21 09:50:14 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/22 13:11:14 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,4 +108,5 @@ int				get_next_line(const int fd, char **line);
 int				ft_atoi_base(const char *str, int str_base);
 char			*ft_strnchr(const char *s, int c, size_t n);
 size_t			ft_strnlen(const char *s, size_t n);
+
 #endif
