@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 09:47:11 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/22 14:45:56 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/24 11:03:19 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char			*ft_sappendc(t_string *dst, char c, size_t len)
 {
 	if (dst == NULL)
 		return (NULL);
+	if (c == '\0')
+		return (dst->s);
 	if (dst->len + len >= dst->size)
 		if (ft_srealloc(dst, dst->len + len + 1) == NULL)
 			return (NULL);
