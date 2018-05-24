@@ -6,7 +6,7 @@
 /*   By: malberte <malberte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 09:43:23 by malberte          #+#    #+#             */
-/*   Updated: 2018/05/21 09:53:37 by malberte         ###   ########.fr       */
+/*   Updated: 2018/05/24 10:36:51 by malberte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,9 @@ char			*ft_srealloc(t_string *str, size_t new_size)
 	return (str->s);
 }
 
+void		ft_sdel_static(t_string *str)
+{
+	ft_strdel(&(str->s));
+	str->len = 0;
+	str->size = 0;
+}
